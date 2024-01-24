@@ -1,0 +1,104 @@
+// Users Collection
+{
+  "_id": ObjectId("user1_id"),
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "mentee_count": 5,
+  "problems_solved": 10
+}
+
+{
+  "_id": ObjectId("user2_id"),
+  "name": "Jane Smith",
+  "email": "jane.smith@example.com",
+  "mentee_count": 20,
+  "problems_solved": 15
+}
+
+// Codekata Collection
+{
+  "_id": ObjectId("codekata1_id"),
+  "user_id": ObjectId("user1_id"),
+  "problem_name": "Problem 1",
+  "submission_date": ISODate("2022-01-23T12:30:00Z")
+}
+
+{
+  "_id": ObjectId("codekata2_id"),
+  "user_id": ObjectId("user2_id"),
+  "problem_name": "Problem 2",
+  "submission_date": ISODate("2022-01-24T10:45:00Z")
+}
+
+// Attendance Collection
+{
+  "_id": ObjectId("attendance1_id"),
+  "user_id": ObjectId("user1_id"),
+  "date": ISODate("2022-01-23T00:00:00Z"),
+  "is_present": true
+}
+
+{
+  "_id": ObjectId("attendance2_id"),
+  "user_id": ObjectId("user2_id"),
+  "date": ISODate("2022-01-24T00:00:00Z"),
+  "is_present": false
+}
+
+// Topics Collection
+{
+  "_id": ObjectId("topic1_id"),
+  "title": "MongoDB Basics",
+  "description": "Introduction to MongoDB"
+}
+
+{
+  "_id": ObjectId("topic2_id"),
+  "title": "Node.js Fundamentals",
+  "description": "Building backend applications with Node.js"
+}
+
+// Tasks Collection
+{
+  "_id": ObjectId("task1_id"),
+  "topic_id": ObjectId("topic1_id"),
+  "title": "Setup MongoDB Environment",
+  "description": "Install and configure MongoDB on your system",
+  "month": "October"
+}
+
+{
+  "_id": ObjectId("task2_id"),
+  "topic_id": ObjectId("topic2_id"),
+  "title": "Build a REST API with Node.js",
+  "description": "Create a simple RESTful API using Node.js",
+  "month": "October"
+}
+
+// Company Drives Collection
+{
+  "_id": ObjectId("drive1_id"),
+  "drive_name": "TechCorp Placement Drive",
+  "start_date": ISODate("2022-01-15T00:00:00Z"),
+  "end_date": ISODate("2022-01-31T23:59:59Z")
+}
+
+{
+  "_id": ObjectId("drive2_id"),
+  "drive_name": "SoftSkills Ltd. Hiring Event",
+  "start_date": ISODate("2022-02-01T00:00:00Z"),
+  "end_date": ISODate("2022-02-15T23:59:59Z")
+}
+
+// Mentors Collection
+{
+  "_id": ObjectId("mentor1_id"),
+  "name": "Mentor A",
+  "mentee_count": 8
+}
+
+{
+  "_id": ObjectId("mentor2_id"),
+  "name": "Mentor B",
+  "mentee_count": 25
+}
